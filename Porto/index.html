@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Muhammad Ridho Anjar Satria — Web Developer and Informatics student based in Ungaran, Indonesia.">
+  <meta name="theme-color" content="#090e1c">
+  <title>Ridho Anjar | Web Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home"><span class="brand-mark">R</span><span>ridho<span class="accent">.</span></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about" data-i18n="navAbout">About</a><a href="#skills" data-i18n="navSkills">Skills</a><a href="#projects" data-i18n="navProjects">Projects</a><a href="#experience" data-i18n="navExperience">Experience</a><a href="#github" data-i18n="navGithub">GitHub</a><a href="#contact" data-i18n="navContact">Contact</a>
+        <button class="language-switch" id="languageSwitch" type="button" aria-label="Switch language">ID</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section container" id="home">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="status-dot"></span><span data-i18n="availability">Open to opportunities</span></div>
+        <p class="hero-kicker" data-i18n="hello">Hello, I'm</p>
+        <h1>Muhammad Ridho<br><span class="gradient-text">Anjar Satria.</span></h1>
+        <h2 data-i18n="role">Web Developer · Informatics Student</h2>
+        <p class="hero-description" data-i18n="heroDesc">I’m an aspiring web developer who enjoys building practical digital solutions, learning new technologies, and turning ideas into useful applications.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#projects" data-i18n="viewWork">Explore my work <span>↗</span></a><a class="button button-secondary" href="#contact" data-i18n="getInTouch">Get in touch</a></div>
+        <div class="social-links"><a href="https://github.com/Axyterdh" target="_blank" rel="noreferrer">GitHub ↗</a><span>·</span><a href="mailto:ridhoanjar57@gmail.com">Email ↗</a></div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="visual-orbit orbit-a"></div><div class="visual-orbit orbit-b"></div>
+        <div class="profile-card">
+          <div class="profile-top"><span class="window-dots"><i></i><i></i><i></i></span><span>developer.profile</span></div>
+          <div class="avatar">RA<span class="avatar-spark">✦</span></div>
+          <p class="profile-name">Ridho Anjar</p><p class="profile-caption" data-i18n="profileCaption">Curious mind. Practical builder.</p>
+          <div class="profile-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Laravel</span></div>
+          <div class="code-lines"><span><b>const</b> focus = <em>"web development"</em>;</span><span><b>const</b> mindset = <em>"learn & build"</em>;</span><span class="code-comment">// always improving</span></div>
+        </div>
+        <div class="floating-chip chip-top">✦ <span data-i18n="chipBuild">Building useful things</span></div><div class="floating-chip chip-bottom">⌘ <span>Ungaran, ID</span></div>
+      </div>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="section-heading reveal"><p class="section-label">01 / <span data-i18n="aboutLabel">ABOUT</span></p><h2 data-i18n="aboutTitle">A little about me</h2></div>
+      <div class="about-grid">
+        <div class="about-main panel reveal">
+          <p class="lead" data-i18n="aboutLead">I’m an Informatics student at Universitas Dian Nuswantoro with a primary interest in web development and software solutions.</p>
+          <p data-i18n="aboutText">My experience includes building and exploring web applications, as well as working with Microsoft Power Platform during my internship. I enjoy understanding a problem, designing a practical solution, and learning the tools needed to bring it to life.</p>
+          <p data-i18n="aboutText2">I’m currently strengthening my development skills through academic and personal projects, with the goal of creating applications that are useful, reliable, and easy to use.</p>
+        </div>
+        <div class="about-facts reveal">
+          <div class="fact-card"><span class="fact-icon">⌖</span><div><small data-i18n="basedIn">BASED IN</small><strong>Ungaran, Indonesia</strong></div></div>
+          <div class="fact-card"><span class="fact-icon">◎</span><div><small data-i18n="education">EDUCATION</small><strong>Universitas Dian Nuswantoro</strong><p data-i18n="degree">Informatics · 2021–2027</p></div></div>
+          <div class="fact-card"><span class="fact-icon">◉</span><div><small data-i18n="gpa">GPA</small><strong>3.07 / 4.00</strong></div></div>
+          <div class="fact-card"><span class="fact-icon">↗</span><div><small data-i18n="interests">INTERESTS</small><strong data-i18n="interestValue">Web development · Software · Automation</strong></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="skills">
+      <div class="section-heading reveal"><p class="section-label">02 / <span data-i18n="skillsLabel">SKILLS</span></p><h2 data-i18n="skillsTitle">Tools I work with</h2><p data-i18n="skillsIntro">A growing toolkit from coursework, independent learning, and hands-on projects.</p></div>
+      <div class="skills-grid">
+        <article class="skill-card panel reveal"><div class="skill-icon">⌘</div><h3 data-i18n="skillProgramming">Programming & Web</h3><div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>Python</span><span>C++</span></div></article>
+        <article class="skill-card panel reveal"><div class="skill-icon">▦</div><h3 data-i18n="skillPlatform">Frameworks & Platforms</h3><div class="tag-list"><span>Laravel</span><span>Power Apps</span><span>Power Automate</span><span>SharePoint</span></div></article>
+        <article class="skill-card panel reveal"><div class="skill-icon">⌁</div><h3 data-i18n="skillTools">Tools & Database</h3><div class="tag-list"><span>Git</span><span>GitHub</span><span>VS Code</span><span>MySQL</span><span>XAMPP</span></div></article>
+      </div>
+      <p class="section-note" data-i18n="skillLevelNote">Self-assessed overall proficiency: Intermediate. Skills vary by technology and project experience.</p>
+    </section>
+
+    <section class="section container" id="projects">
+      <div class="section-heading reveal"><p class="section-label">03 / <span data-i18n="projectsLabel">PROJECTS</span></p><h2 data-i18n="projectsTitle">Selected work</h2><p data-i18n="projectsIntro">Projects from internship experience and academic exploration.</p></div>
+      <div class="projects-grid">
+        <article class="project-card panel reveal">
+          <div class="project-top"><span class="project-number">01</span><span class="project-type" data-i18n="internship">INTERNSHIP PROJECT</span></div>
+          <div class="project-art art-power"><div class="mini-window"><div class="mini-bar"></div><div class="mini-layout"><i></i><div><b></b><b></b><b></b></div></div><div class="mini-lines"></div></div><span class="art-label">TDS / MANAGEMENT</span></div>
+          <div class="project-content"><h3>TDS Management System</h3><p data-i18n="projectTds">A product specification data management application developed with Microsoft Power Platform to centralize TDS data and support an approval workflow.</p><div class="tag-list"><span>Power Apps</span><span>SharePoint</span><span>Power Automate</span></div><div class="project-links"><span data-i18n="caseStudy">Internship project</span><a href="https://github.com/Axyterdh" target="_blank" rel="noreferrer" data-i18n="githubProfile">GitHub profile ↗</a></div></div>
+        </article>
+        <article class="project-card panel reveal">
+          <div class="project-top"><span class="project-number">02</span><span class="project-type" data-i18n="academic">ACADEMIC PROJECT</span></div>
+          <div class="project-art art-python"><div class="search-visual"><span>⌕</span><div><i></i><i></i><i></i></div></div><div class="similarity">TF-IDF <b>+</b> Cosine Similarity</div><span class="art-label">INFORMATION RETRIEVAL</span></div>
+          <div class="project-content"><h3>Information Retrieval System</h3><p data-i18n="projectIrr">A Python-based text retrieval project applying TF-IDF and Cosine Similarity to rank documents according to their relevance to a search query.</p><div class="tag-list"><span>Python</span><span>TF-IDF</span><span>Cosine Similarity</span></div><div class="project-links"><span data-i18n="academicWork">Academic work</span><a href="https://github.com/Axyterdh" target="_blank" rel="noreferrer" data-i18n="githubProfile">GitHub profile ↗</a></div></div>
+        </article>
+        <article class="project-card panel reveal">
+          <div class="project-top"><span class="project-number">03</span><span class="project-type" data-i18n="academic">ACADEMIC PROJECT</span></div>
+          <div class="project-art art-laravel"><div class="booking-ui"><div class="booking-head"></div><div class="booking-row"><i></i><b></b></div><div class="booking-row"><i></i><b></b></div><div class="booking-button"></div></div><span class="art-label">ROOM BOOKING</span></div>
+          <div class="project-content"><h3>Room Borrowing System</h3><p data-i18n="projectRoom">A Laravel-based web application for managing room borrowing requests and organizing room-use information.</p><div class="tag-list"><span>Laravel</span><span>PHP</span><span>MySQL</span></div><div class="project-links"><span data-i18n="webApplication">Web application</span><a href="https://github.com/Axyterdh" target="_blank" rel="noreferrer" data-i18n="githubProfile">GitHub profile ↗</a></div></div>
+        </article>
+      </div>
+      <p class="section-note" data-i18n="projectNote">The links currently lead to your GitHub profile. Replace each with its specific repository when available, and add screenshots of your own work.</p>
+    </section>
+
+    <section class="section container" id="experience">
+      <div class="section-heading reveal"><p class="section-label">04 / <span data-i18n="experienceLabel">EXPERIENCE</span></p><h2 data-i18n="experienceTitle">Experience & education</h2></div>
+      <div class="timeline panel reveal">
+        <div class="timeline-item"><div class="timeline-marker"></div><div class="timeline-meta"><span data-i18n="internship">INTERNSHIP</span><span>2025</span></div><h3>PT Graphic Packaging International Indonesia</h3><p class="timeline-role">IT Intern · Junior Power Apps Developer</p><p data-i18n="internDesc">Contributed to the development of a product specification data management application using Power Apps, SharePoint, and Power Automate, focusing on centralized data and approval workflow support.</p></div>
+        <div class="timeline-item"><div class="timeline-marker"></div><div class="timeline-meta"><span data-i18n="education">EDUCATION</span><span>2021–2027</span></div><h3>Universitas Dian Nuswantoro</h3><p class="timeline-role" data-i18n="degree">Informatics</p><p data-i18n="eduDesc">Undergraduate study focused on computing fundamentals, programming, and software development. Current GPA: 3.07 / 4.00.</p></div>
+      </div>
+    </section>
+
+    <section class="section container" id="github">
+      <div class="section-heading reveal"><p class="section-label">05 / GITHUB</p><h2 data-i18n="githubTitle">Code, commits & progress</h2><p data-i18n="githubIntro">Explore my public repositories and development activity.</p></div>
+      <div class="github-panel panel reveal">
+        <div class="github-profile"><div class="github-avatar">RA</div><div><h3>Axyterdh</h3><p data-i18n="githubCaption">My code repositories on GitHub</p></div><a class="button button-secondary" href="https://github.com/Axyterdh" target="_blank" rel="noreferrer">View GitHub ↗</a></div>
+        <img class="github-stats" src="https://github-readme-stats.vercel.app/api?username=Axyterdh&show_icons=true&hide_border=true&bg_color=10182b&title_color=82b7ff&text_color=c4d2e8&icon_color=82b7ff" alt="GitHub statistics for Axyterdh" loading="lazy">
+        <img class="github-stats" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Axyterdh&layout=compact&hide_border=true&bg_color=10182b&title_color=82b7ff&text_color=c4d2e8" alt="Most used programming languages on GitHub" loading="lazy">
+        <p class="stats-note" data-i18n="statsNote">GitHub statistics are provided by a third-party service and may occasionally be unavailable or rate-limited.</p>
+      </div>
+    </section>
+
+    <section class="section container contact-section" id="contact">
+      <div class="contact-panel panel reveal"><p class="section-label">06 / <span data-i18n="contactLabel">CONTACT</span></p><h2 data-i18n="contactTitle">Let's build something useful.</h2><p data-i18n="contactText">I’m open to connecting, discussing ideas, and exploring opportunities to learn and contribute.</p><a class="button button-primary" href="mailto:ridhoanjar57@gmail.com" data-i18n="emailMe">Email me <span>↗</span></a><p class="contact-hint">ridhoanjar57@gmail.com</p></div>
+    </section>
+  </main>
+  <footer class="footer container"><a class="brand" href="#home"><span class="brand-mark">R</span><span>ridho<span class="accent">.</span></span></a><p>© <span id="year"></span> Muhammad Ridho Anjar Satria. <span data-i18n="rights">Built with curiosity.</span></p><a href="#home" class="back-top" data-i18n="backTop">Back to top ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
